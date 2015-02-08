@@ -1,0 +1,20 @@
+{
+    "name": "soil/cors-request-handler-bundle",
+    "version": "0.0.1",
+    "minimum-stability": "dev",
+    "dist": {
+        "url": "https://github.com/soilby/cors-request-handler-bundle",
+        "type": "vcs"
+    },
+    "autoload": {
+        "psr-4": {
+            "Soil\\QueueHttpEndpointBundle\\": "./"
+        }
+    },
+    "require": {
+        "php": ">=5.4",
+        "symfony/http-kernel": "2.6.*",
+        "symfony/config": "2.6.*",
+        "symfony/dependency-injection": "2.6.*"
+}
+}

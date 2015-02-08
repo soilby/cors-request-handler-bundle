@@ -1,0 +1,7 @@
+services:
+    soil_cors_request_handler.listener.cors_request_listener:
+        class: Soil\CORSRequestHandlerBundle\Listener\CORSRequestListener
+        arguments: [@request_stack, %eligible_routes%]
+        tags:
+            - { name: kernel.event_listener, event: kernel.request, method: onRequest }
+            - { name: kernel.event_listener, event: kernel.response, method: onResponse }
