@@ -62,8 +62,6 @@ class CORSRequestListener {
         if (!$this->checkRequest()) return;
 
         $uri = $e->getRequest()->getRequestUri();
-        var_dump($uri);
-
 
         $e->getResponse()->headers->add(['Access-Control-Allow-Origin' => '*']);
 

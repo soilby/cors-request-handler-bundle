@@ -10,6 +10,6 @@ namespace Soil\CORSRequestHandlerBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class SoilQueueHttpEndpointBundle extends Bundle  {
+class SoilCORSRequestHandlerBundle extends Bundle  {
 
 } 
