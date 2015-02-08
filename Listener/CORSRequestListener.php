@@ -1,6 +1,6 @@
 <?php
 
-namespace Soil\QueueHttpEndpointBundle\Listener;
+namespace Soil\CORSRequestHandlerBundle\Listener;
 
 
 use Symfony\Component\HttpFoundation\Request;

@@ -1,0 +1,6 @@
+Enable CORS answer for specified routes in config.
+See config.yml.dist
+
+@todo add options for answer headers
+@todo make posibility to enable answer for all OPTIONS request
+@todo may be different config for each route
