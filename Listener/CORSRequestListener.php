@@ -46,13 +46,15 @@ class CORSRequestListener {
     }
 
     protected function handleOptionsRequest(Request $request)   {
+        $headersBack = implode(', ', $request->headers->keys());
+
         $response = new Response();
         $response->headers->add([
             'Access-Control-Allow-Origin' => '*',
             'Access-Control-Allow-Methods' => 'GET, POST, PUT',
             'Content-Type' => 'text/html; charset=utf-8',
             'Access-Control-Max-Age' => 10,
-            'Access-Control-Allow-Headers' => 'Content-Type, Access'
+            'Access-Control-Allow-Headers' => $headersBack
         ]);
 
         return $response;
