@@ -46,7 +46,8 @@ class CORSRequestListener {
     }
 
     protected function handleOptionsRequest(Request $request)   {
-        $headersBack = implode(', ', $request->headers->keys());
+//        $headersBack = implode(', ', $request->headers->keys());
+        $headersBack = $request->headers->get('Access-Control-Request-Headers');
 
         $response = new Response();
         $response->headers->add([
